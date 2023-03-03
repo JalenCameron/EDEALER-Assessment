@@ -1,0 +1,21 @@
+@use 'variables' as *;
+@use "mixins" as *;
+
+footer {
+    @include ridge;
+    background-color: #564470;
+    
+    h2 {
+        margin: 0;
+        padding: 1rem;
+        font-size: 2.5rem;
+        position: relative;
+
+        &:before {
+            content: "Footer";
+            position: absolute;
+            top: 48px;
+            @include mirror;
+        }
+    }
+}

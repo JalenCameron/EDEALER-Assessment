@@ -1,0 +1,265 @@
+body {
+  color: #fcfcfc;
+  font-family: "Rye", cursive;
+  font-size: 1rem;
+  background-color: #fcfcfc;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  margin: 0;
+  font-style: normal;
+  line-height: 2rem;
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+  margin: 0;
+  text-transform: uppercase;
+  text-shadow: -1.2px -1.2px 0 #9fbad9, 1.2px -1.2px 0 #9fbad9, -1.2px 1.2px 0 #9fbad9, 1.2px 1.2px 0 #9fbad9;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+#countdown h2 {
+  color: #0c0c0c;
+  font-family: "Poppins", sans-serif;
+  text-shadow: none;
+}
+#countdown small {
+  color: #0c0c0c;
+  font-family: "Poppins", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+.logo img {
+  width: 50px;
+  height: auto;
+}
+
+header {
+  background-color: #3b2e4b;
+  position: relative;
+  border-top: 10px solid rgba(255, 255, 255, 0.12);
+  border-left: 10px solid rgba(255, 255, 255, 0.02);
+  border-right: 10px solid rgba(255, 255, 255, 0.02);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+header h1 {
+  margin: 0;
+  padding: 1rem;
+  position: relative;
+}
+header h1:before {
+  content: "Header";
+  position: absolute;
+  top: 52px;
+  transform: rotate(180deg) scaleX(-1);
+  opacity: 0.5;
+  --gradient: linear-gradient(transparent 40%, white 90%);
+  -webkit-mask-image: var(--gradient);
+  mask-image: var(--gradient);
+}
+
+.container {
+  border: solid black;
+  border-width: 7px 17px 12px 12px;
+  margin: 3rem auto;
+  width: 400px;
+  background-color: black;
+}
+.container .countdown-container {
+  box-sizing: border-box;
+  background-image: url("../images/snowy-trees.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  overflow: hidden;
+}
+.container .countdown-container .countdown {
+  display: flex;
+  transform: scale(1.2);
+  border: 1.5px solid black;
+}
+.container .countdown-container .countdown .time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+}
+.container .countdown-container .countdown .time h2 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 1;
+  margin: 0 0 5px;
+}
+.container .countdown-container .countdown .time:nth-child(2) {
+  border-left: 1.5px solid black;
+  border-right: 1.5px solid black;
+}
+.container .countdown-container .countdown .time:nth-child(3) {
+  border-right: 1.5px solid black;
+}
+.container nav {
+  border-top: 10px solid rgba(255, 255, 255, 0.12);
+  border-left: 10px solid rgba(255, 255, 255, 0.02);
+  border-right: 10px solid rgba(255, 255, 255, 0.02);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  background-color: #04a5e8;
+  margin: 0.4rem 0;
+  position: relative;
+}
+.container nav h2 {
+  margin: 0;
+  padding: 1rem;
+}
+.container nav h2:before {
+  content: "Nav";
+  position: absolute;
+  top: 34px;
+  transform: rotate(180deg) scaleX(-1);
+  opacity: 0.5;
+  --gradient: linear-gradient(transparent 40%, white 90%);
+  -webkit-mask-image: var(--gradient);
+  mask-image: var(--gradient);
+}
+.container main {
+  margin: 0.4rem 0;
+}
+.container main .left-side {
+  display: inline-block;
+  width: 67%;
+}
+.container main .left-side section {
+  border-top: 10px solid rgba(255, 255, 255, 0.12);
+  border-left: 10px solid rgba(255, 255, 255, 0.02);
+  border-right: 10px solid rgba(255, 255, 255, 0.02);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  background-color: #daabaa;
+  padding: 1rem;
+}
+.container main .left-side section h2 {
+  position: relative;
+}
+.container main .left-side section h2:before {
+  content: "Section";
+  position: absolute;
+  top: 17px;
+  transform: rotate(180deg) scaleX(-1);
+  opacity: 0.5;
+  --gradient: linear-gradient(transparent 40%, white 90%);
+  -webkit-mask-image: var(--gradient);
+  mask-image: var(--gradient);
+}
+.container main .left-side article {
+  border-top: 10px solid rgba(255, 255, 255, 0.12);
+  border-left: 10px solid rgba(255, 255, 255, 0.02);
+  border-right: 10px solid rgba(255, 255, 255, 0.02);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  background-color: #2f798f;
+  padding: 1rem;
+  margin-top: 0.4rem;
+}
+.container main .left-side article h2 {
+  position: relative;
+}
+.container main .left-side article h2:before {
+  content: "Article";
+  position: absolute;
+  top: 18px;
+  transform: rotate(180deg) scaleX(-1);
+  opacity: 0.5;
+  --gradient: linear-gradient(transparent 40%, white 90%);
+  -webkit-mask-image: var(--gradient);
+  mask-image: var(--gradient);
+}
+.container main aside {
+  border-top: 10px solid rgba(255, 255, 255, 0.12);
+  border-left: 10px solid rgba(255, 255, 255, 0.02);
+  border-right: 10px solid rgba(255, 255, 255, 0.02);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  float: right;
+  background-color: #893332;
+}
+.container main aside h2 {
+  margin: 0;
+  padding: 3.4rem 0.5rem;
+  position: relative;
+}
+.container main aside h2:before {
+  content: "Aside";
+  position: absolute;
+  top: 73px;
+  transform: rotate(180deg) scaleX(-1);
+  opacity: 0.5;
+  --gradient: linear-gradient(transparent 40%, white 90%);
+  -webkit-mask-image: var(--gradient);
+  mask-image: var(--gradient);
+}
+.container #popup {
+  box-sizing: border-box;
+  display: none;
+  width: 300px;
+  height: 200px;
+  background: #7f96bb;
+  padding: 10px;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container #popup p {
+  margin: 1rem 3rem;
+  font-family: "Poppins", sans-serif;
+}
+.container #popup button {
+  font-family: "Poppins", sans-serif;
+}
+
+footer {
+  border-top: 10px solid rgba(255, 255, 255, 0.12);
+  border-left: 10px solid rgba(255, 255, 255, 0.02);
+  border-right: 10px solid rgba(255, 255, 255, 0.02);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  background-color: #564470;
+}
+footer h2 {
+  margin: 0;
+  padding: 1rem;
+  font-size: 2.5rem;
+  position: relative;
+}
+footer h2:before {
+  content: "Footer";
+  position: absolute;
+  top: 48px;
+  transform: rotate(180deg) scaleX(-1);
+  opacity: 0.5;
+  --gradient: linear-gradient(transparent 40%, white 90%);
+  -webkit-mask-image: var(--gradient);
+  mask-image: var(--gradient);
+}
+
+/*# sourceMappingURL=styles.css.map */

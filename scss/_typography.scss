@@ -1,0 +1,64 @@
+@use 'variables' as *;
+
+body{ 
+    color: $main-colour;
+    font-family: $main-font;
+    font-size: $default-font-size;
+    background-color: $body-colour;
+}
+
+// Components
+ul {
+	list-style: none;
+}
+
+p {
+    margin: 0;
+    font-style: normal;
+    line-height: $line-spacing;
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: center;
+    margin: 0;
+    text-transform: uppercase;
+    text-shadow:
+        -1.2px -1.2px 0 #9fbad9,
+        1.2px -1.2px 0 #9fbad9,
+        -1.2px 1.2px 0 #9fbad9,
+        1.2px 1.2px 0 #9fbad9;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+// For the Countdown Clock
+#countdown {
+    h2 {
+        color: $countdown-colour;
+        font-family: $secondary-font;
+        text-shadow: none;
+    }
+
+    small {
+        color: $countdown-colour;
+        font-family: $secondary-font;
+    }
+}
+
+// Responsive Image Reset
+img {
+	max-width: 100%;
+	height: auto;
+    .logo & {
+        width: 50px;
+        height: auto;
+    }
+}

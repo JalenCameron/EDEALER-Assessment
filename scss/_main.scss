@@ -1,0 +1,166 @@
+@use 'variables' as *;
+@use "mixins" as *;
+
+// Wrapper
+.container {
+    @include standard-border;
+    margin: 3rem auto;
+    width: 400px;
+    background-color: black;
+
+    // COUNTDOWN
+    .countdown-container {
+        box-sizing: border-box;
+        background-image: url('../images/snowy-trees.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0.5rem 0;
+        padding: 1rem;
+        overflow: hidden;
+    
+        .countdown {
+            display: flex;
+            transform: scale(1.2);
+            border: 1.5px solid black;
+
+            .time {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 0.5rem;
+                margin: 0.5rem 0;
+
+                h2 {
+                    font-weight: bold;
+                    font-size: 1.5rem;
+                    line-height: 1;
+                    margin: 0 0 5px;
+                }
+
+                &:nth-child(2) {
+                    border-left: 1.5px solid black;
+                    border-right: 1.5px solid black;
+                }
+
+                &:nth-child(3) {
+                    border-right: 1.5px solid black;
+                }
+            }
+        }
+        }
+
+    // NAV
+    nav {
+        @include ridge;
+        background-color: #04a5e8;
+        margin: 0.4rem 0;
+        position: relative;
+
+        h2 {
+            margin: 0;
+            padding: 1rem;
+
+            &:before {
+                content: "Nav";
+                position: absolute;
+                top: 34px;
+                @include mirror;
+            }
+        }
+    }
+
+    // MAIN
+    main {
+        margin: 0.4rem 0;
+
+        // SECTION & ARTICLE
+        .left-side {
+            display: inline-block;
+            width: 67%;
+
+            // SECTION
+            section {
+                @include ridge;
+                background-color: #daabaa;
+                padding: 1rem;
+
+                h2 {
+                    position: relative;
+                    &:before {
+                        content: "Section";
+                        position: absolute;
+                        top: 17px;
+                        @include mirror;
+                    }
+                }
+            }
+
+            // ARTICLE
+            article {
+                @include ridge;
+                background-color: #2f798f;
+                padding: 1rem;
+                margin-top: 0.4rem;
+
+                h2 {
+                    position: relative;
+
+                    &:before {
+                        content: "Article";
+                        position: absolute;
+                        top: 18px;
+                        @include mirror;
+                    }
+                }
+            }
+        }
+
+        // ASIDE 
+        aside {
+            @include ridge;
+            float: right;
+            background-color: #893332;
+
+            h2 {
+                margin: 0;
+                padding: 3.4rem 0.5rem;
+                position: relative;
+
+                &:before {
+                    content: "Aside";
+                    position: absolute;
+                    top: 73px;
+                    @include mirror;
+                }
+            }
+        }
+    }
+
+    #popup {
+        box-sizing: border-box;
+        display: none;
+        width: 300px;
+        height: 200px;
+        background: #7f96bb;
+        padding: 10px;
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        p {
+            margin: 1rem 3rem;
+            font-family: $secondary-font;
+        }
+
+        button {
+            font-family: $secondary-font;
+        }
+    }
+}

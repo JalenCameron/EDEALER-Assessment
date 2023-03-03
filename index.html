@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Rye&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom Stylesheets -->
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Technical Assessment</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- HEADER -->
+      <header>
+        <h1>Header</h1>
+      </header>
+
+      <!-- COUNTDOWN TO MARCH 15th 2023 -->
+      <!-- I'm working under the assumption that Goal 1 is not in relation to Goal 2 (i.e., the popup isn't supposed to be the March 15th countdown). My apologies if I've misinterpreted that though -->
+      <div class="countdown-container">
+        <div id="countdown" class="countdown">
+          <div class="time">
+            <h2 id="days"></h2>
+            <small>Days</small>
+          </div>
+
+          <div class="time">
+            <h2 id="hours"></h2>
+            <small>Hours</small>
+          </div>
+
+          <div class="time">
+            <h2 id="minutes"></h2>
+            <small>Minutes</small>
+          </div>
+
+          <div class="time">
+            <h2 id="seconds"></h2>
+            <small>Seconds</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- NAV -->
+      <nav>
+        <h2>Nav</h2>
+      </nav>
+
+      <main>
+        <div class="left-side">
+          <!-- SECTION -->
+          <section>
+            <h2>Section</h2>
+          </section>
+
+          <!-- ARTICLE --->
+          <article>
+            <h2>Article</h2>
+          </article>
+        </div>
+
+        <!-- ASIDE --->
+        <aside>
+          <h2>Aside</h2>
+        </aside>
+
+        <!-- POPUP/MODAL -->
+        <div id="popup">
+          <button onclick="hidePopUp()">X</button>
+          <p>Thanks for checking out this technical assessment!</p>
+        </div>
+      </main>
+
+      <!-- FOOTER --->
+      <footer>
+        <h2>Footer</h2>
+      </footer>
+    </div>
+
+    <!-- JavaScript Script -->
+    <script src="./scripts/scripts.js"></script>
+  </body>
+</html>
